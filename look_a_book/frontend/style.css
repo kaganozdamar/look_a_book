@@ -1,0 +1,173 @@
+.navbar-brand:link, .navbar-brand:visited {
+  color: #5800FF;
+  transition: 800ms;
+}
+
+.navbar-brand:hover {
+  color: #212529;
+  transition: 800ms;
+}
+
+.top-bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-light {
+  background-color: #fff;
+  border-color: #dee2e6;
+  color: #212529;
+}
+
+.btn-light:hover {
+  border-color: #c1c9d0;
+  color: #5800FF;
+  transition: 800ms;
+}
+
+.btn-light:hover i {
+  color: #5800FF;
+  transition: 800ms;
+}
+
+.btn-light i {
+  color: #9da1a7;
+}
+
+.btn-primary:link, .btn-primary:visited {
+  color: white;
+  background-color: #5800FF;
+  border-color: #4700cc;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #4700cc;
+  border-color: #360297;
+  transition: 800ms;
+}
+
+.navbar {
+  background-color: #5800FF;
+}
+
+.nav.flex-column a {
+  color: #5800FF;
+}
+
+.nav.flex-column a:hover {
+  color: #4700cc;
+  transition: 800ms;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #5800FF !important;
+}
+
+.slider__nav {
+  max-height: 222px;
+}
+
+@media (min-width: 1200px) {
+  .slider__nav {
+    max-height: 266px;
+  }
+}
+@media (min-width: 1368px) {
+  .slider__nav {
+    max-height: 310px;
+  }
+}
+.card .img-wrap {
+  height: 240px;
+  width: auto;
+}
+
+.img-wrap {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card .img-wrap img {
+  padding-top: 7px;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .badge {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.card .title {
+  display: block;
+  text-decoration: none;
+  color: #212529;
+}
+
+.card .info-wrap {
+  padding: 0.3rem 0.9rem;
+}
+
+.btn-icon {
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #5800FF;
+}
+
+.backg-blue-2 {
+  background-color: #0096FF;
+}
+
+.backg-blue-2 {
+  background-color: #4700cc;
+}
+
+.breadcrumb a {
+  color: white;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.breadcrumb .breadcrumb-item {
+  color: white;
+}
+
+.gallery-wrap .img-big-wrap {
+  height: auto;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+}
+
+.checked {
+  color: #ff982b;
+}
+
+.card-text {
+  height: 100px;
+}
+
+@media (max-width: 1400px) {
+  .card-text {
+    height: 120px;
+  }
+}
+@media (max-width: 1200px) {
+  .card-text {
+    height: 130px;
+  }
+}/*# sourceMappingURL=style.css.map */

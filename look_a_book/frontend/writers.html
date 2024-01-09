@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>A Tale of Two Cities</title>
+</head>
+<body>
+    
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-6 col-lg-2 col-md-4 fs-5">
+                        <a href="index.html" class="navbar-brand">
+                            <i class="fa-solid fa-book p-1"></i><span>Look! A Book!</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-5 col-md-8 order-lg-last text-end">
+                        <a href="login.html" class="btn btn-light">
+                            <i class="fa fa-user"></i> <span class="ms-1 d-none d-md-inline-block">Account</span>
+                        </a>
+                        <a href="" class="btn btn-light">
+                            <i class="fa fa-heart"></i> <span class="ms-1 d-none d-md-inline-block">Lists</span>
+                        </a>
+                        <a href="" class="btn btn-light">
+                            <i class="fa fa-shopping-cart"></i> <span class="ms-1 d-none d-md-inline-block">Cart</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-12 col-sm-12">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Book or writer name">
+                                <button class="btn btn-warning">
+                                    <i class="search-button fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <button type="button" class="navbar-toggler border" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar_main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="books.html" class="nav-link ps-1">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="writers.html" class="nav-link ps-1">Writers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link ps-1" data-bs-toggle="dropdown">Update</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Book Update</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Writer Update</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-3 backg-blue-2">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ol class="breadcrumb mb-o ms-1">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item text-truncate active">
+                            Writers
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/charles_dickens.jpg" class="card-img-top" alt="charles_dickens">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Charles <br> Dickens</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Charles <br class="d-block d-lg-none"> Dickens</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-1">He created some of the world's best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/dostoyevsky.jpg" class="card-img-top" alt="dostoyevsky">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Fyodor <br> Dostoevsky</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Fyodor <br class="d-block d-lg-none"> Dostoevsky</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-2">Fyodor Mikhailovich Dostoevsky, sometimes transliterated as Dostoyevsky, was a Russian novelist, short story writer, essayist, and journalist.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/jack_london.jpg" class="card-img-top" alt="jack_london">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Jack <br> London</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Jack <br class="d-block d-lg-none"> London</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-3">John Griffith Chaney, better known as Jack London, was an American novelist, journalist and activist. A pioneer of commercial fiction and American magazines, he was one of the first American authors to become an international celebrity and earn a large fortune from writing.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/victor_hugo.jpg" class="card-img-top" alt="victor_hugo">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Victor <br> Hugo</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Victor <br class="d-block d-lg-none"> Hugo</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-4">Victor-Marie Hugo was a French Romantic writer and politician. During a literary career that spanned more than sixty years, he wrote in a variety of genres and forms. He is considered to be one of the greatest French writers of all time.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/ernest_hemingway.jpg" class="card-img-top" alt="ernest_hemingway">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Ernest <br> Hemingway</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Ernest <br class="d-block d-lg-none"> Hemingway</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-5">Ernest Miller Hemingway was an American novelist, short-story writer, and journalist. His economical and understated style—which he termed the iceberg theory—had a strong influence on 20th-century fiction, while his adventurous lifestyle and public image brought him admiration from later generations.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/george_orwell.jpg" class="card-img-top" alt="george_orwell">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">George <br> Orwell</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">George <br class="d-block d-lg-none"> Orwell</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-6">Eric Arthur Blair, better known by his pen name George Orwell, was an English novelist, essayist, journalist, and critic. His work is characterised by lucid prose, social criticism, opposition to totalitarianism, and support of democratic socialism.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/leo_tolstoy.jpg" class="card-img-top" alt="leo_tolstoy">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">Leo <br> Tolstoy</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">Leo <br class="d-block d-lg-none"> Tolstoy</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-7">Count Lev Nikolayevich Tolstoy, usually referred to in English as Leo Tolstoy, was a Russian writer who is regarded as one of the greatest authors of all time.</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card writer-card">
+                        <img src="img/william_shakespeare.jpg" class="card-img-top" alt="william_shakespeare">
+                        <div class="card-body">
+                            <h6 class="card-title d-block d-md-none text-truncate">William <br> Shakespeare</h6>
+                            <h5 class="card-title d-none d-md-block text-truncate">William <br class="d-block d-lg-none"> Shakespeare</h5>
+                            <p class="card-text d-none d-md-block" id="writer-short-info-8">William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the "Bard of Avon".</p>
+                            <a href="writers_details.html" class="btn btn-primary"><span class="d-none d-md-inline-block me-1">Writer</span><span class="me-1">Details</span><i class="fa-solid fa-feather-pointed d-none d-sm-inline-block"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-4">
+        <div class="container">
+             <div class="row gy-3">
+                <div class="col-md-6 col-lg-4">
+                 <form>
+                    <div class="input-group mt-2">
+                        <input type="text" name="" id="" class="form-control" placeholder="E-mail">
+                        <button class="btn btn-outline-warning">Subscribe</button>
+                    </div>
+                 </form>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <nav class="text-center text-md-end mt-0">
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <p class="text-center text-white">
+                        @2027 All Rights Reserved.
+                    </p>
+                </div>
+             </div>
+        </div>
+    </footer>
+   
+<script src="script.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/d97e5069f8.js" crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/fslightbox/index.js"></script>
+</body>
+</html>

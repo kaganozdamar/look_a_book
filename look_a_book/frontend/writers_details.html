@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>A Tale of Two Cities</title>
+</head>
+<body>
+    
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-6 col-lg-2 col-md-4 fs-5">
+                        <a href="index.html" class="navbar-brand">
+                            <i class="fa-solid fa-book p-1"></i><span>Look! A Book!</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-5 col-md-8 order-lg-last text-end">
+                        <a href="login.html" class="btn btn-light">
+                            <i class="fa fa-user"></i> <span class="ms-1 d-none d-md-inline-block">Account</span>
+                        </a>
+                        <a href="" class="btn btn-light">
+                            <i class="fa fa-heart"></i> <span class="ms-1 d-none d-md-inline-block">Lists</span>
+                        </a>
+                        <a href="" class="btn btn-light">
+                            <i class="fa fa-shopping-cart"></i> <span class="ms-1 d-none d-md-inline-block">Cart</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-12 col-sm-12">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Book or writer name">
+                                <button class="btn btn-warning">
+                                    <i class="search-button fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <button type="button" class="navbar-toggler border" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar_main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="books.html" class="nav-link ps-1">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="writers.html" class="nav-link ps-1">Writers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link ps-1" data-bs-toggle="dropdown">Update</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Book Update</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Writer Update</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-3 backg-blue-2">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ol class="breadcrumb mb-o ms-1">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Writers</a>
+                        </li>
+                        <li class="breadcrumb-item text-truncate active">
+                            Charles Dickens
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <aside class="col-lg-5 pb-3 book-img">
+                    <div class="gallery-wrap shadow">
+                        <div class="img-big-wrap img-thumbnail">
+                            <a href="img/charles_dickens.jpg" data-type="image" data-fslightbox="mygallery">
+                                <img src="img/charles_dickens.jpg" alt="charles_dickens">
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <main class="col-lg-7">
+                    <article>
+                        <div class="col-lg-5 mb-3">
+                            <h4 class="title text-dark">
+                              Charles Dickens
+                            </h4>
+                        </div>
+                        <div class="col-lg-12">
+                            <h5>
+                              Who is Charles Dickens?
+                            </h5>
+                            <div class="book-summary">
+                                <p id="writer-who">Charles John Huffam Dickens was an English writer and social critic. He created some of the world's best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime and, by the 20th century, critics and scholars had recognised him as a literary genius. His novels and short stories are widely read today. Born in Portsmouth, Dickens left school at the age of 12 to work in a boot-blacking factory when his father was incarcerated in a debtors' prison. After three years he returned to school, before he began his literary career as a journalist. Dickens edited a weekly journal for 20 years, wrote 15 novels, five novellas, hundreds of short stories and non-fiction articles, lectured and performed readings extensively, was an indefatigable letter writer, and campaigned vigorously for children's rights, for education, and for other social reforms.</p>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <dt class="col-lg-5 col-md-3 col-sm-3">Date of Birth:</dt>
+                                        <dd class="col-lg-7 col-md-3 col-sm-9 book-writer">7 February 1812</dd>
+                                    </div>
+                                    <div class="row">
+                                        <dt class="col-lg-5 col-md-3 col-sm-3">Place of Birth:</dt>
+                                        <dd class="col-lg-7 col-md-3 col-sm-9 book-genre">Portsmouth, England</dd>
+                                    </div>
+                                    <div class="row">
+                                        <dt class="col-lg-5 col-md-3 col-sm-3">Nationality:</dt>
+                                        <dd class="col-lg-7 col-md-3 col-sm-9 book-pages">British</dd>
+                                    </div>
+                                    </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <dt class="col-lg-4 col-md-3 col-sm-3">Genres:</dt>
+                                        <dd class="col-lg-8 col-md-3 col-sm-9 book-public-date">Novel</dd>
+                                    </div>
+                                    <div class="row">
+                                        <dt class="col-lg-4 col-md-3 col-sm-3">First Work:</dt>
+                                        <dd class="col-lg-8 col-md-3 col-sm-9 book-lang">The Pickwick Papers</dd>
+                                    </div>
+                                    <div class="row">
+                                        <dt class="col-lg-4 col-md-3 col-sm-3">Last Work:</dt>
+                                        <dd class="col-lg-8 col-md-3 col-sm-9 first-public-date">The Mystery of Edwin Drood</dd>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn btn-light">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <span>Other Charles Dickens Books</span>
+                                </a>
+                                <a href="https://en.wikipedia.org/wiki/Charles_Dickens" target="_blank" class="btn btn-primary text-white">
+                                    <i class="fa-brands fa-wikipedia-w"></i>
+                                    <span>More details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <header class="section-heading">
+                <h4 class="mb-3">Other <span class="writer">Charles Dickens</span> Books</h4>
+            </header>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <b class="badge bg-danger">On Sale</b>
+                            <img src="img/charles_dickens_2.jpg" alt="charles_dickens_2">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <a href="books_details.html" class="float-end btn btn-light btn-icon">Details</a>
+                            <a href="" class="title text-truncate">
+                            <b>Great Expectations</b> 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">49.99 TRY</span>
+                                <del class="price-old">69.99 TRY</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <b class="badge bg-danger">On Sale</b>
+                            <img src="img/charles_dickens_3.jpg" alt="charles_dickens_3">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <a href="book_details.html" class="float-end btn btn-light btn-icon">Details</a>
+                            <a href="" class="title text-truncate">
+                            <b>A Christmas Carol</b> 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">49.99 TRY</span>
+                                <del class="price-old">69.99 TRY</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <b class="badge bg-danger">On Sale</b>
+                            <img src="img/charles_dickens_4.jpg" alt="charles_dickens_4">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <a href="book_details.html" class="float-end btn btn-light btn-icon">Details</a>
+                            <a href="" class="title text-truncate">
+                            <b>David Copperfield</b> 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">49.99 TRY</span>
+                                <del class="price-old">69.99 TRY</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <b class="badge bg-danger">On Sale</b>
+                            <img src="img/charles_dickens_5.jpg" alt="charles_dickens_5">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <a href="book_details.html" class="float-end btn btn-light btn-icon">Details</a>
+                            <a href="" class="title text-truncate">
+                            <b>Oliver Twist</b> 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">49.99 TRY</span>
+                                <del class="price-old">69.99 TRY</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-4">
+        <div class="container">
+             <div class="row gy-3">
+                <div class="col-md-6 col-lg-4">
+                 <form>
+                    <div class="input-group mt-2">
+                        <input type="text" name="" id="" class="form-control" placeholder="E-mail">
+                        <button class="btn btn-outline-warning">Subscribe</button>
+                    </div>
+                 </form>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <nav class="text-center text-md-end mt-0">
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <p class="text-center text-white">
+                        @2027 All Rights Reserved.
+                    </p>
+                </div>
+             </div>
+        </div>
+    </footer>
+    
+<script src="writer_details_script.js"></script>
+<script src="https://kit.fontawesome.com/d97e5069f8.js" crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/fslightbox/index.js"></script>
+</body>
+</html>

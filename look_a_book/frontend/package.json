@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "fslightbox": "^3.3.1",
+    "jquery": "^3.6.0"
+  }
+}
